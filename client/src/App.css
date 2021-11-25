@@ -276,7 +276,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 120%;
-  color: #2c2c30;
+  color: #e4e4e4;
   margin-bottom: 10px;
 }
 
@@ -286,10 +286,10 @@ body {
 
 .channel-empty__second {
   font-family: Helvetica Neue, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 120%;
   margin: 0;
-  color: #858688;
+  color: #d0d1d4;
 }
 
 .channel__container {
