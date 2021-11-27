@@ -5,6 +5,7 @@ import { ChannellSearch, TeamChannelList, TeamChannelPreview } from "./";
 import HeadphonesIcon from "../assets/headphones.png";
 import LogoutIcon from "../assets/logout.png";
 
+
 const cookies = new Cookies();
 
 const SideBar = ({ logout }) => (
@@ -19,7 +20,9 @@ const SideBar = ({ logout }) => (
         <img src={LogoutIcon} alt="" width="30" />
       </div>
     </div>
+
   </div>
+
 );
 
 const CompanyHeader = () => (
@@ -53,7 +56,7 @@ const ChannellListContainer = ({
         <ChannellSearch />
         <ChannelList
           filters={{}}
-          channelRenderFilterFn={() => {}}
+          channelRenderFilterFn={() => { }}
           List={(listProps) => (
             <TeamChannelList
               {...listProps}
@@ -70,7 +73,7 @@ const ChannellListContainer = ({
         />
         <ChannelList
           filters={{}}
-          channelRenderFilterFn={() => {}}
+          channelRenderFilterFn={() => { }}
           List={(listProps) => (
             <TeamChannelList
               {...listProps}

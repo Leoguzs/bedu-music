@@ -8,6 +8,19 @@ import { ChannellListContainer, ChannellContainer, Auth } from "./components";
 import "stream-chat-react/dist/css/index.css";
 import "./App.css";
 
+import Header from "./components/globals/header/Header";
+
+import {
+  BrowserRouter as Router,
+  Routes as Switch,
+  Route,
+  Link,
+  useParams
+} from "react-router-dom";
+import Home from "./components/music/Home";
+
+
+
 const cookies = new Cookies();
 
 const apiKey = "c775t29nwa2b";
@@ -37,23 +50,40 @@ const App = () => {
   if (!authToken) return <Auth />;
 
   return (
-    <div className="app__wrapper">
-      <Chat client={client} theme="team dark">
-        <ChannellListContainer
-          isCreating={isCreating}
-          setIsCreating={setIsCreating}
-          setCreateType={setCreateType}
-          setIsEditing={setIsEditing}
-        />
-        <ChannellContainer
-          isCreating={isCreating}
-          setIsCreating={setIsCreating}
-          isEditing={isEditing}
-          setIsEditing={setIsEditing}
-          createType={createType}
-        />
-      </Chat>
-    </div>
+    <Router>
+      <Header />
+
+      <Switch>
+        <Route path="/" element={<Home />}>
+        </Route>
+        
+
+        <Route path="/comunidad"  element={
+            <div className="app__wrapper">
+              <Chat client={client} theme="team dark">
+                <ChannellListContainer
+                  isCreating={isCreating}
+                  setIsCreating={setIsCreating}
+                  setCreateType={setCreateType}
+                  setIsEditing={setIsEditing}
+                />
+                <ChannellContainer
+                  isCreating={isCreating}
+                  setIsCreating={setIsCreating}
+                  isEditing={isEditing}
+                  setIsEditing={setIsEditing}
+                  createType={createType}
+                />
+              </Chat>
+            </div>
+          
+        }>
+        </Route>
+
+        {/* <Route component={PageNotFound} /> */}
+      </Switch>
+
+    </Router>
   );
 };
 
