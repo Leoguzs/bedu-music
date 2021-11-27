@@ -8,6 +8,8 @@ import { ChannellListContainer, ChannellContainer, Auth } from "./components";
 import "stream-chat-react/dist/css/index.css";
 import "./App.css";
 
+import Header from "./components/globals/header/Header";
+
 const cookies = new Cookies();
 
 const apiKey = "c775t29nwa2b";
@@ -37,23 +39,26 @@ const App = () => {
   if (!authToken) return <Auth />;
 
   return (
-    <div className="app__wrapper">
-      <Chat client={client} theme="team dark">
-        <ChannellListContainer
-          isCreating={isCreating}
-          setIsCreating={setIsCreating}
-          setCreateType={setCreateType}
-          setIsEditing={setIsEditing}
-        />
-        <ChannellContainer
-          isCreating={isCreating}
-          setIsCreating={setIsCreating}
-          isEditing={isEditing}
-          setIsEditing={setIsEditing}
-          createType={createType}
-        />
-      </Chat>
-    </div>
+    <>
+      <Header />
+      <div className="app__wrapper">
+        <Chat client={client} theme="team dark">
+          <ChannellListContainer
+            isCreating={isCreating}
+            setIsCreating={setIsCreating}
+            setCreateType={setCreateType}
+            setIsEditing={setIsEditing}
+          />
+          <ChannellContainer
+            isCreating={isCreating}
+            setIsCreating={setIsCreating}
+            isEditing={isEditing}
+            setIsEditing={setIsEditing}
+            createType={createType}
+          />
+        </Chat>
+      </div>
+    </>
   );
 };
 
