@@ -17,8 +17,8 @@ import {
     Link,
     useParams
 } from "react-router-dom";
-import Home from "./components/music/Home";
 import Footer from "./components/globals/footer/Footer";
+import ContentMain from "./components/music/ContentMain";
 
 
 
@@ -55,7 +55,7 @@ const App = () => {
             <Header client={client} />
 
             <Switch>
-                <Route path="/" element={<Home />}>
+                <Route path="/" element={<ContentMain />}>
                 </Route>
 
 
