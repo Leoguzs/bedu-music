@@ -1,11 +1,30 @@
 import React from "react";
-import { Navbar, Container, Nav, Button, NavDropdown, Dropdown } from "react-bootstrap";
+import { Navbar, Container, Nav, Button, NavDropdown, Dropdown, NavbarBrand, } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Cookies from "universal-cookie";
+import "./Header.css"
+const cookies = new Cookies();
 
-const Header = () => {
+const Header = (props) => {
+
+
+    const logout = () => {
+        cookies.remove("token");
+        cookies.remove("userId");
+        cookies.remove("username");
+        cookies.remove("fullName");
+        cookies.remove("avatarURL");
+        cookies.remove("hashedPassword");
+        cookies.remove("phoneNumber");
+
+        window.location.reload();
+    };
+
     return (
         <Navbar bg="dark" variant="dark" variant="pills">
+
             <Container>
+                <NavbarBrand className="mr-auto titulo-header" href="/">BEDU MUSIC  </NavbarBrand>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
 
@@ -22,13 +41,13 @@ const Header = () => {
                     <Nav>
                         <Dropdown>
                             <Dropdown.Toggle variant="light" id="dropdown-basic">
-                                NombreUsuario
+                                {props.client.user.name}
 
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item >Perfil</Dropdown.Item>
-                                <Dropdown.Item >Cerrar sesión</Dropdown.Item>
+                                    <Dropdown.Item as={Link}  to='/perfil'>Perfil</Dropdown.Item>
+                                <Dropdown.Item onClick={logout} >Cerrar sesión</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Nav>
