@@ -1,0 +1,43 @@
+.auth__form-container_fields-content{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.auth__form-container_fields-content_input input{
+    background-color: #101010;
+}
+
+.auth__form-container_fields-content_input label{
+    color: #f3f3f3;
+}
+
+.auth__form-container_fields-account p, .auth__form-container_fields-content *{
+    color: #fff;
+}
+.auth__form-container_fields-content_button button {
+    background-color: #706565;
+    color: #fff;
+    border: #BDBDBD;
+}
+
+.auth__form-container_fields-content p {
+    color: #BDBDBD;
+}
+.auth__form-container_fields-content p span {
+    color: #A0B2BD;
+}
+
+
+.auth__form-container_fields-content_input input:focus {
+    box-shadow: 0 1px 1px rgba(100, 100, 100, 0.075)inset, 0 0 8px rgba(100,100,100,0.6);    
+    border-color:#A0B2BD;
+}
+
+.auth__form-container_fields-content_button button:hover {
+    background-color: #A0B2BD;
+    border: #BDBDBD;
+}
