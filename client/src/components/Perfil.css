@@ -1,0 +1,38 @@
+body {
+    background: center/90% url("../assets/hosein-zanbori-wvbOWcIDuYg-unsplash.jpg");    
+}
+main{
+    height: 300px;
+}
+
+.perfil-card {
+    margin: 1rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.perfil-card *{
+    color: #fff;
+}
+.perfil-card h5{
+    margin-top: 5rem;
+    font-size: 15px;
+}
+.perfil-card h3{
+    font-size: 40px;
+}
+
+.perfil-borde-foto{
+    margin: 1rem ;
+    border-radius: 50%;
+}
+.perfil-foto{
+    margin: .3rem ;
+    width: 200px;    
+    height: 200px;
+    border-radius: 50%;
+
+  }

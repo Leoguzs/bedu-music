@@ -41,13 +41,13 @@ const Header = (props) => {
                     <Nav>
                         <Dropdown>
                             <Dropdown.Toggle variant="light" id="dropdown-basic">
-                                {props.client.user.name}
+                            <i className="fa fa-id-badge"></i>  {props.client.user.name}
 
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                    <Dropdown.Item as={Link}  to='/perfil'>Perfil</Dropdown.Item>
-                                <Dropdown.Item onClick={logout} >Cerrar sesión</Dropdown.Item>
+                                    <Dropdown.Item as={Link}  to='/perfil'> <i className="fa fa-address-book"></i> Perfil</Dropdown.Item>
+                                <Dropdown.Item onClick={logout} > <i className="fa fa-power-off"></i> Cerrar sesión</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Nav>

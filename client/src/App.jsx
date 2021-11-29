@@ -19,7 +19,7 @@ import {
 } from "react-router-dom";
 import Footer from "./components/globals/footer/Footer";
 import ContentMain from "./components/music/ContentMain";
-
+import Perfil from "./components/Perfil"; 
 
 
 const cookies = new Cookies();
@@ -55,8 +55,9 @@ const App = () => {
             <Header client={client} />
 
             <Switch>
-                <Route path="/" element={<ContentMain />}>
-                </Route>
+                <Route path="/" element={<ContentMain />} />
+                
+                <Route path="/perfil" element={<Perfil client={client} />} />
 
 
                 <Route path="/comunidad" element={
@@ -78,8 +79,7 @@ const App = () => {
                         </Chat>
                     </div>
 
-                }>
-                </Route>
+                } />
 
                 {/* <Route component={PageNotFound} /> */}
             </Switch>
