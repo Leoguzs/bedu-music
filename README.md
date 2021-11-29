@@ -1,6 +1,6 @@
 # BEDU MUSIC: Musica para programar
 
-## Esta aplicación web es una red social diseñada para comunicarse, compartir información y escuchar música. Todo esto, exclusivamente para personas que tengan alguna relación con BEDU.
+ Esta aplicación web es una red social diseñada para comunicarse, compartir información y escuchar música. Todo esto, exclusivamente para personas que tengan alguna relación con BEDU.
 
 - Creemos que una red social podía ser algo que compartiéramos como un todo en esta comunidad de aprendizaje y qué mejor que el tema central fuera la música.
 
