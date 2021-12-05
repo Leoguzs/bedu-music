@@ -39,7 +39,7 @@ const ChannellContainer = ({
     <div className="channel-empty__container">
       <p className="channel-empty__first">
         Este es el comienzo del historial de tu chat ;)
-      </p>{" "}
+      </p>
       <p className="channel-empty__second">
         ¡¡¡Envía mensajes, documentos, links, emojis y más!!!
       </p>
