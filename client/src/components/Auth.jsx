@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cookies from "universal-cookie";
 import axios from "axios";
-import './Auth.css';
+import "./Auth.css";
 
 import signInImg from "../assets/signupWallpaper.jpg";
 
@@ -138,11 +138,12 @@ const Auth = () => {
             </div>
           </form>
           <div className="auth__form-container_fields-account">
-            <p>{isSignup ? "Ya tengo una cuenta " : "No tengo una cuenta "} 
-            <span onClick={switchMode}>
-              {isSignup ? " Entrar" : " Registrarse"}
-            </span></p>
-            
+            <p>
+              {isSignup ? "Ya tengo una cuenta " : "No tengo una cuenta "}
+              <span onClick={switchMode}>
+                {isSignup ? " Entrar" : " Registrarse"}
+              </span>
+            </p>
           </div>
         </div>
       </div>

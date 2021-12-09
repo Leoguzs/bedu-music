@@ -48,7 +48,7 @@ body {
 
   padding: 2rem;
   transition: 0.8s ease;
-  
+
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
   backdrop-filter: blur(12px);
@@ -60,7 +60,7 @@ body {
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-weight: 900;
 }
 
@@ -105,8 +105,8 @@ body {
 
 .auth__form-container_fields-content_input input:focus,
 .auth__form-container_fields-content_input input:active {
-  box-shadow: 0px 0px 0px 1.5px #A0B2BD;
-  border-color: #A0B2BD;
+  box-shadow: 0px 0px 0px 1.5px #a0b2bd;
+  border-color: #a0b2bd;
 }
 
 .auth__form-container_fields-content_input-password {
@@ -123,10 +123,10 @@ body {
 }
 
 .auth__form-container_fields-content_button button {
-  border-radius: 4px;    
+  border-radius: 4px;
   background-color: #706565;
   color: #fff;
-  border: #BDBDBD;
+  border: #bdbdbd;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding: 0.7rem 1.2rem;
@@ -136,7 +136,7 @@ body {
 }
 
 .auth__form-container_fields-content_button button:hover {
-  background: #A0B2BD;
+  background: #a0b2bd;
 }
 
 .auth__form-container_fields-account {
@@ -598,7 +598,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -684,7 +684,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #858688;
+  color: #fff;
   margin-top: 16px;
 }
 
@@ -728,7 +728,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #2c2c30;
+  color: #fff;
   word-break: break-all;
 }
 
