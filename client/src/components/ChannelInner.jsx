@@ -79,7 +79,7 @@ const TeamChannelHeader = ({ setIsEditing }) => {
 
           {additionalMembers > 0 && (
             <p className="team-channel-header__name user">
-              and {additionalMembers} more
+              y {additionalMembers} más
             </p>
           )}
         </div>
@@ -97,9 +97,9 @@ const TeamChannelHeader = ({ setIsEditing }) => {
   };
 
   const getWatcherText = (watchers) => {
-    if (!watchers) return "No users online";
-    if (watchers === 1) return "1 user online";
-    return `${watchers} users online`;
+    if (!watchers) return "No hay usuarios en línea";
+    if (watchers === 1) return "1 usuario en línea";
+    return `${watchers} usuarios en línea`;
   };
 
   return (

@@ -48,7 +48,7 @@ body {
 
   padding: 2rem;
   transition: 0.8s ease;
-  
+
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
   backdrop-filter: blur(12px);
@@ -60,7 +60,7 @@ body {
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-weight: 900;
 }
 
@@ -105,8 +105,8 @@ body {
 
 .auth__form-container_fields-content_input input:focus,
 .auth__form-container_fields-content_input input:active {
-  box-shadow: 0px 0px 0px 1.5px #A0B2BD;
-  border-color: #A0B2BD;
+  box-shadow: 0px 0px 0px 1.5px #a0b2bd;
+  border-color: #a0b2bd;
 }
 
 .auth__form-container_fields-content_input-password {
@@ -123,10 +123,10 @@ body {
 }
 
 .auth__form-container_fields-content_button button {
-  border-radius: 4px;    
+  border-radius: 4px;
   background-color: #706565;
   color: #fff;
-  border: #BDBDBD;
+  border: #bdbdbd;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding: 0.7rem 1.2rem;
@@ -136,7 +136,7 @@ body {
 }
 
 .auth__form-container_fields-content_button button:hover {
-  background: #A0B2BD;
+  background: #a0b2bd;
 }
 
 .auth__form-container_fields-account {
@@ -682,10 +682,11 @@ body {
 
 .user-list__header p {
   font-family: Helvetica Neue, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
-  color: #858688;
+  color: #fff;
   margin-top: 16px;
+  font-weight: 900;
 }
 
 .user-list__header p:first-child {
@@ -713,7 +714,7 @@ body {
 }
 
 .user-item__wrapper:hover {
-  background: #f7f6f8;
+  background: #242424;
   cursor: pointer;
 }
 
@@ -728,7 +729,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #2c2c30;
+  color: #ffffff;
   word-break: break-all;
 }
 
@@ -775,7 +776,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -788,14 +789,14 @@ body {
   flex-direction: column;
   height: 169px;
   padding-left: 20px;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 0px #fff;
 }
 
 .channel-name-input__wrapper p {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 120%;
-  color: #2c2c30;
+  color: #fff;
   margin-top: 30px;
 }
 
@@ -869,7 +870,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #2c2c30;
+  color: #f1f1f7;
   margin-right: 8px;
 }
 
@@ -935,7 +936,7 @@ body {
 .team-channel-header__right-text {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
-  color: #858688;
+  color: #fff;
 }
 
 .team-channel-list {
@@ -966,11 +967,12 @@ body {
 
 .team-channel-list__header__title {
   font-family: Helvetica Neue, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 16px;
   height: 16px;
-  color: rgba(255, 255, 255, 0.66);
+  color: #fff;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .channel-preview__wrapper {
@@ -1046,7 +1048,7 @@ body {
 }
 
 .str-chat__message-team:hover {
-  background: #e9e9ea;
+  background: #3d3d5a;
 }
 
 .str-chat__message-team-group {
@@ -1058,9 +1060,9 @@ body {
 .str-chat__message-team-content p {
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 120%;
-  color: #000000;
+  color: #fff;
   margin: 0;
   background: none;
 }
@@ -1087,19 +1089,19 @@ body {
   z-index: 2;
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 10px;
-  color: #858688;
-  margin-top: 4px;
+  color: #fff;
+  margin-top: 5px;
 }
 
 .str-chat__message-team-author strong {
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
+  font-weight: 600;
+  font-size: 15px;
   line-height: 120%;
-  color: #858688;
+  color: #fff;
   margin: 0;
   margin-right: 8px;
 }
@@ -1118,9 +1120,9 @@ body {
   /* justify-content: flex-end; */
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .str-chat__message-replies-count-button:focus {
@@ -1132,7 +1134,7 @@ body {
 }
 
 .str-chat__date-separator-date {
-  color: #858688;
+  color: #fff;
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
   font-weight: normal;

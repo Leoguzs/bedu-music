@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cookies from "universal-cookie";
 import axios from "axios";
-import './Auth.css';
+import "./Auth.css";
 
 import signInImg from "../assets/signupWallpaper.jpg";
 
@@ -24,23 +24,19 @@ const Auth = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const switchMode = () => {
-    setIsSignup((prevIsSignup) => !prevIsSignup);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { fullName, username, password, phoneNumber, avatarURL } = form;
+    const { username, password, phoneNumber, avatarURL } = form;
 
     const URL = "http://localhost:4000/auth";
 
     const {
-      data: { token, userId, hashedPassword },
+      data: { token, userId, hashedPassword, fullName },
     } = await axios.post(`${URL}/${isSignup ? "signup" : "login"}`, {
       username,
       password,
-      fullName,
+      fullName: form.fullName,
       phoneNumber,
       avatarURL,
     });
@@ -59,12 +55,16 @@ const Auth = () => {
     window.location.reload();
   };
 
+  const switchMode = () => {
+    setIsSignup((prevIsSignup) => !prevIsSignup);
+  };
+
   return (
     <div className="auth__form-container">
       <div className="auth__form-container_fields">
         <div className="auth__form-container_fields-content">
           <p>{isSignup ? "Registrarse" : "Entrar"}</p>
-          <form action="" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             {isSignup && ( //se utiliza para mostrar algo basado en la misma condición
               <div className="auth__form-container_fields-content_input">
                 <label htmlFor="fullName">Nombre Completo</label>
@@ -138,11 +138,12 @@ const Auth = () => {
             </div>
           </form>
           <div className="auth__form-container_fields-account">
-            <p>{isSignup ? "Ya tengo una cuenta " : "No tengo una cuenta "} 
-            <span onClick={switchMode}>
-              {isSignup ? " Entrar" : " Registrarse"}
-            </span></p>
-            
+            <p>
+              {isSignup ? "Ya tengo una cuenta " : "No tengo una cuenta "}
+              <span onClick={switchMode}>
+                {isSignup ? " Entrar" : " Registrarse"}
+              </span>
+            </p>
           </div>
         </div>
       </div>
