@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 4001;
 
 require("dotenv").config();
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
+/* const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID;
 
-const twilioClient = require("twilio")(accountSid, authToken);
+const twilioClient = require("twilio")(accountSid, authToken); */
 
 app.use(cors());
 app.use(express.json());
@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
   res.send("It's alive!!!");
 });
 
+/*
 app.post("/", (req, res) => {
   const { message, user: sender, type, members } = req.body;
 
@@ -46,7 +47,7 @@ app.post("/", (req, res) => {
 
   return res.status(200).send("no tienes mensajes");
 });
-
+ */
 app.use("/auth", authRoutes);
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
