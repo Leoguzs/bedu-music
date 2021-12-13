@@ -5,7 +5,7 @@ import { CloseCreateChannel } from "../assets";
 
 const ChannelNameInput = ({ channelName = "", setChannelName }) => {
   const handleChange = (event) => {
-    event.prenventDefault();
+    event.preventDefault();
 
     setChannelName(event.target.value);
   };
@@ -53,8 +53,8 @@ const CreateChannel = ({ createType, setIsCreating }) => {
       <div className="create-channel__header">
         <p>
           {createType === "team"
-            ? "Crear Nuevo Canal"
-            : "Enviar Mensaje Directo"}
+            ? "Crear un nuevo canal"
+            : "Enviar mensaje directo"}
         </p>
         <CloseCreateChannel setIsCreating={setIsCreating} />
       </div>
@@ -66,7 +66,7 @@ const CreateChannel = ({ createType, setIsCreating }) => {
       )}
       <UserList setSelectedUsers={setSelectedUsers} />
       <div className="create-channel__button-wrapper" onClick={createChannel}>
-        <p>{createType === "team" ? "Crear Canal" : "Crear Mensaje Grupal"}</p>
+        <p>{createType === "team" ? "Crear Canal" : "Enviar Mensaje"}</p>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const TeamChannelList = ({
     return (
       <div className="team-channel-list">
         <p className="team-channel-list__message loading">
-          {type === "team" ? "Canales" : "Mensajes"} cargando...
+          {type === "team" ? "Channels" : "Messages"} Cargando ...
         </p>
       </div>
     );
@@ -44,7 +44,7 @@ const TeamChannelList = ({
           setCreateType={setCreateType}
           setIsEditing={setIsEditing}
           setToggleContainer={setToggleContainer}
-          type={type === "team" ? "grupo" : "mensajería"}
+          type={type === "team" ? "team" : "messaging"}
         />
       </div>
       {children}

@@ -598,7 +598,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -686,7 +686,7 @@ body {
   line-height: 17px;
   color: #fff;
   margin-top: 16px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .user-list__header p:first-child {
@@ -731,6 +731,7 @@ body {
   line-height: 17px;
   color: #ffffff;
   word-break: break-all;
+  font-weight: 600;
 }
 
 .user-item__name {
@@ -798,6 +799,7 @@ body {
   line-height: 120%;
   color: #fff;
   margin-top: 30px;
+  font-weight: 700;
 }
 
 .channel-name-input__wrapper input {
@@ -870,7 +872,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #f1f1f7;
+  color: #242424;
   margin-right: 8px;
 }
 
@@ -936,7 +938,7 @@ body {
 .team-channel-header__right-text {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: #242424;
 }
 
 .team-channel-list {
@@ -1014,6 +1016,7 @@ body {
   width: 100%;
   text-overflow: ellipsis;
   word-break: break-all;
+  font-weight: 700;
 }
 
 .channel-preview__item.multi {
