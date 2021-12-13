@@ -47,16 +47,20 @@ body {
   justify-content: flex-start;
 
   padding: 2rem;
-  box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
-  border-radius: 5px;
   transition: 0.8s ease;
-  background: #fff;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #05245a;
+  color: #bdbdbd;
   font-weight: 900;
 }
 
@@ -70,7 +74,7 @@ body {
 
 .auth__form-container_fields-content_input label {
   margin-bottom: 0.45rem;
-  color: rgb(61, 79, 88);
+  color: #f3f3f3;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
@@ -85,7 +89,7 @@ body {
   outline: none;
   transition: all 150ms ease-in-out 0s;
   width: 85%;
-  background: #fff;
+  background-color: #101010;
 }
 
 .auth__form-container_fields-content_input input::placeholder {
@@ -101,8 +105,8 @@ body {
 
 .auth__form-container_fields-content_input input:focus,
 .auth__form-container_fields-content_input input:active {
-  box-shadow: 0px 0px 0px 1.5px #005fff;
-  border-color: #005fff;
+  box-shadow: 0px 0px 0px 1.5px #a0b2bd;
+  border-color: #a0b2bd;
 }
 
 .auth__form-container_fields-content_input-password {
@@ -120,9 +124,9 @@ body {
 
 .auth__form-container_fields-content_button button {
   border-radius: 4px;
-  background: #005fff;
-  border: 1px solid #005fff;
+  background-color: #706565;
   color: #fff;
+  border: #bdbdbd;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding: 0.7rem 1.2rem;
@@ -132,7 +136,7 @@ body {
 }
 
 .auth__form-container_fields-content_button button:hover {
-  background: #0066ff;
+  background: #a0b2bd;
 }
 
 .auth__form-container_fields-account {
@@ -594,7 +598,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -678,10 +682,11 @@ body {
 
 .user-list__header p {
   font-family: Helvetica Neue, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
-  color: #858688;
+  color: #fff;
   margin-top: 16px;
+  font-weight: 700;
 }
 
 .user-list__header p:first-child {
@@ -709,7 +714,7 @@ body {
 }
 
 .user-item__wrapper:hover {
-  background: #f7f6f8;
+  background: #242424;
   cursor: pointer;
 }
 
@@ -724,8 +729,9 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #2c2c30;
+  color: #ffffff;
   word-break: break-all;
+  font-weight: 600;
 }
 
 .user-item__name {
@@ -771,7 +777,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -784,15 +790,16 @@ body {
   flex-direction: column;
   height: 169px;
   padding-left: 20px;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 0px #fff;
 }
 
 .channel-name-input__wrapper p {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 120%;
-  color: #2c2c30;
+  color: #fff;
   margin-top: 30px;
+  font-weight: 700;
 }
 
 .channel-name-input__wrapper input {
@@ -865,7 +872,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #2c2c30;
+  color: #242424;
   margin-right: 8px;
 }
 
@@ -931,7 +938,7 @@ body {
 .team-channel-header__right-text {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
-  color: #858688;
+  color: #242424;
 }
 
 .team-channel-list {
@@ -962,11 +969,12 @@ body {
 
 .team-channel-list__header__title {
   font-family: Helvetica Neue, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 16px;
   height: 16px;
-  color: rgba(255, 255, 255, 0.66);
+  color: #fff;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .channel-preview__wrapper {
@@ -1008,6 +1016,7 @@ body {
   width: 100%;
   text-overflow: ellipsis;
   word-break: break-all;
+  font-weight: 700;
 }
 
 .channel-preview__item.multi {
@@ -1042,7 +1051,7 @@ body {
 }
 
 .str-chat__message-team:hover {
-  background: #e9e9ea;
+  background: #3d3d5a;
 }
 
 .str-chat__message-team-group {
@@ -1054,9 +1063,9 @@ body {
 .str-chat__message-team-content p {
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 120%;
-  color: #000000;
+  color: #fff;
   margin: 0;
   background: none;
 }
@@ -1083,19 +1092,19 @@ body {
   z-index: 2;
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 10px;
-  color: #858688;
-  margin-top: 4px;
+  color: #fff;
+  margin-top: 5px;
 }
 
 .str-chat__message-team-author strong {
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
+  font-weight: 600;
+  font-size: 15px;
   line-height: 120%;
-  color: #858688;
+  color: #fff;
   margin: 0;
   margin-right: 8px;
 }
@@ -1114,9 +1123,9 @@ body {
   /* justify-content: flex-end; */
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .str-chat__message-replies-count-button:focus {
@@ -1128,7 +1137,7 @@ body {
 }
 
 .str-chat__date-separator-date {
-  color: #858688;
+  color: #fff;
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
   font-weight: normal;
