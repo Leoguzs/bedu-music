@@ -7,15 +7,20 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
 }
 
 #root {
-  height: 100%;
+  height: 70%;
 }
 
 .auth__form-container {
   min-height: 100vh;
+  margin-top: -50px;
   display: flex;
   flex-direction: row;
 }
@@ -27,13 +32,14 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  background: #242424;
+  padding-top: 0.1rem;
+  background: #ffffff;
 }
 
 .auth__form-container_image {
   flex: 3;
   display: flex;
-  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 0px 5px rgba(255, 255, 255, 0.05);
 }
 
 .auth__form-container_image img {
@@ -60,7 +66,7 @@ body {
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #bdbdbd;
+  color: #363636;
   font-weight: 900;
 }
 
@@ -69,12 +75,12 @@ body {
   flex-direction: column;
   position: relative;
 
-  margin: 1rem 0rem;
+  margin: 0.9rem 0rem;
 }
 
 .auth__form-container_fields-content_input label {
-  margin-bottom: 0.45rem;
-  color: #f3f3f3;
+  margin-bottom: 0.30rem;
+  color: #3a3a3a;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
@@ -88,13 +94,14 @@ body {
   font-size: 14px;
   outline: none;
   transition: all 150ms ease-in-out 0s;
-  width: 85%;
-  background-color: #101010;
+  width: 95%;
+  background-color: #333333;
+  margin-bottom: -5px;
 }
 
 .auth__form-container_fields-content_input input::placeholder {
   color: #b1b1b1;
-  width: 100%;
+  width: 98%;
   font-weight: unset;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -124,7 +131,7 @@ body {
 
 .auth__form-container_fields-content_button button {
   border-radius: 4px;
-  background-color: #706565;
+  background-color: #353535;
   color: #fff;
   border: #bdbdbd;
   font-family: Arial, Helvetica, sans-serif;
