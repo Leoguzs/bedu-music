@@ -7,20 +7,15 @@ html,
 body {
   margin: 0;
   padding: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
+  height: 100%;
 }
 
 #root {
-  height: 70%;
+  height: 100%;
 }
 
 .auth__form-container {
   min-height: 100vh;
-  margin-top: -50px;
   display: flex;
   flex-direction: row;
 }
@@ -32,14 +27,13 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  padding-top: 0.1rem;
-  background: #ffffff;
+  background: #242424;
 }
 
 .auth__form-container_image {
   flex: 3;
   display: flex;
-  box-shadow: 1px 0px 5px rgba(255, 255, 255, 0.05);
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
 .auth__form-container_image img {
@@ -66,7 +60,7 @@ body {
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #363636;
+  color: #bdbdbd;
   font-weight: 900;
 }
 
@@ -75,12 +69,12 @@ body {
   flex-direction: column;
   position: relative;
 
-  margin: 0.9rem 0rem;
+  margin: 1rem 0rem;
 }
 
 .auth__form-container_fields-content_input label {
-  margin-bottom: 0.30rem;
-  color: #3a3a3a;
+  margin-bottom: 0.45rem;
+  color: #f3f3f3;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
@@ -94,14 +88,13 @@ body {
   font-size: 14px;
   outline: none;
   transition: all 150ms ease-in-out 0s;
-  width: 95%;
-  background-color: #333333;
-  margin-bottom: -5px;
+  width: 85%;
+  background-color: #101010;
 }
 
 .auth__form-container_fields-content_input input::placeholder {
   color: #b1b1b1;
-  width: 98%;
+  width: 100%;
   font-weight: unset;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -131,7 +124,7 @@ body {
 
 .auth__form-container_fields-content_button button {
   border-radius: 4px;
-  background-color: #353535;
+  background-color: #706565;
   color: #fff;
   border: #bdbdbd;
   font-family: Arial, Helvetica, sans-serif;
@@ -573,7 +566,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 120%;
-  color: #ffffff;
+  color: #707070;
 }
 
 .channel-search__result-text {
@@ -605,7 +598,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #fff;
+  color: rgb(58, 58, 58);
   margin-left: 20px;
 }
 
@@ -669,7 +662,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #4e4e4e;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -691,7 +684,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 17px;
-  color: #fff;
+  color: rgb(59, 58, 58);
   margin-top: 16px;
   font-weight: 700;
 }
@@ -736,7 +729,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  color: #696969;
   word-break: break-all;
   font-weight: 600;
 }
@@ -784,7 +777,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #fff;
+  color: rgb(77, 77, 77);
   margin-left: 20px;
 }
 
@@ -804,7 +797,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 120%;
-  color: #fff;
+  color: rgb(51, 51, 51);
   margin-top: 30px;
   font-weight: 700;
 }
@@ -834,7 +827,7 @@ body {
 
 .edit-channel__button-wrapper {
   height: 82px;
-  background: #f7f6f8;
+  background: #4a4a4b;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -847,7 +840,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #666464;
   margin-right: 30px;
   border-radius: 8px;
   cursor: pointer;
@@ -879,7 +872,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #242424;
+  color: #424141;
   margin-right: 8px;
 }
 

@@ -1,9 +1,9 @@
 .footer {
-    background-color: #212529;
+    background-color: #ffffff;
 }
 
 .footer *{
-    color: #fff;
+    color: rgb(83, 83, 83);
 }
 
 .btn-social-icon{

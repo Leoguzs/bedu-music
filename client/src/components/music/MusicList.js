@@ -61,11 +61,6 @@ const MusicList = (props) => {
         </div>
     );
 
-
-
-
-   
-
 }
 
 

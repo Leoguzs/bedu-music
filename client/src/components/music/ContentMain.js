@@ -1,62 +1,110 @@
-import React, { useState } from 'react';
-import MusicPlayer from './MusicPlayer';
-import GridCardsSongs from './GridCardsSongs';
-// import { Grid } from '@mui/material';
+import React from "react";
+import AudioPlayer from "./AudioPlayer"
+import AudioList from './AudioList';
+import AudioCard from './AudioCard';
 
-const ContentMain = ()=> {
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
-    const [songs, setSongs] = useState(
-        [
-            {
-                id: 11,
-                title: "Song1",
-                imgage: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1392f2e3-d214-440d-8a97-65e1d6f5a460/dcthe25-c3f48252-f92b-4e35-8462-ca3caaa4b09a.png/v1/fill/w_150,h_150,strp/_f2u__woods__by_raridecor_dcthe25-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUwIiwicGF0aCI6IlwvZlwvMTM5MmYyZTMtZDIxNC00NDBkLThhOTctNjVlMWQ2ZjVhNDYwXC9kY3RoZTI1LWMzZjQ4MjUyLWY5MmItNGUzNS04NDYyLWNhM2NhYWE0YjA5YS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.g4i7eTcNkKxKLk7zljaoSIpZ9BNWkZ1myTPsKV6yWuw",
-                info: {
-                    artist: "artistName",
-                    gender: "genderName",
-                    year: 2005
-                }
-            },
-            {
-                id: 12,
-                title: "Song2",
-                imgage: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1392f2e3-d214-440d-8a97-65e1d6f5a460/dcthe25-c3f48252-f92b-4e35-8462-ca3caaa4b09a.png/v1/fill/w_150,h_150,strp/_f2u__woods__by_raridecor_dcthe25-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUwIiwicGF0aCI6IlwvZlwvMTM5MmYyZTMtZDIxNC00NDBkLThhOTctNjVlMWQ2ZjVhNDYwXC9kY3RoZTI1LWMzZjQ4MjUyLWY5MmItNGUzNS04NDYyLWNhM2NhYWE0YjA5YS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.g4i7eTcNkKxKLk7zljaoSIpZ9BNWkZ1myTPsKV6yWuw",
-                info: {
-                    artist: "artistName",
-                    gender: "genderName",
-                    year: 2005
-                }
-            },
-            {
-                id: 13,
-                title: "Song3",
-                imgage: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1392f2e3-d214-440d-8a97-65e1d6f5a460/dcthe25-c3f48252-f92b-4e35-8462-ca3caaa4b09a.png/v1/fill/w_150,h_150,strp/_f2u__woods__by_raridecor_dcthe25-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUwIiwicGF0aCI6IlwvZlwvMTM5MmYyZTMtZDIxNC00NDBkLThhOTctNjVlMWQ2ZjVhNDYwXC9kY3RoZTI1LWMzZjQ4MjUyLWY5MmItNGUzNS04NDYyLWNhM2NhYWE0YjA5YS5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.g4i7eTcNkKxKLk7zljaoSIpZ9BNWkZ1myTPsKV6yWuw",
-                info: {
-                    artist: "artistName",
-                    gender: "genderName",
-                    year: 2005
-                }
-            }
-        ]
-    )
 
-    
-        return (
-            <div 
-            className="content-main" 
-            style={
-                {
-                    display: "flex", 
-                    flexDirection: "row", 
-                    justifyContent:"space-around", 
-                    alignItems:"center",
-                    flexWrap:"wrap"
-                }}>
-                <MusicPlayer style={{flexBasis: "30%"}}/>
-                <GridCardsSongs songs={songs} style={{flexBasis: "70%"}}/>
-            </div >
-        );
-    
+function Descubre() {
+
+const [isLoadingAlbums, setIsLoadingAlbums] = React.useState(true)
+  const [albums, setAlbums] = React.useState([]);
+  React.useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await fetch('https://bedumusic.herokuapp.com/v1/albums/all?limit=3')
+        const data = await response.json()
+        //const artists = Object.values(data.artists).map(artist => artist.name)
+        //console.log(artists.join(', '))
+        //console.log(data);
+        setAlbums(data);
+        setIsLoadingAlbums(false);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getData();
+    //console.log(data)
+  }, []);
+
+
+  //Playlist
+  const [isLoadingPlaylist, setIsLoadingPlaylist] = React.useState(true)
+  const [playlist, setPlaylist] = React.useState([]);
+  const handleClickUpdatePlaylist = (e, album) => {
+    console.log('handleClickUpdatePlaylist')
+    setPlaylist(album);
+    setIsLoadingPlaylist(false)
+  }
+
+
+  //const [playerList, setPlayerList] = React.useState([])
+  const [trackIndex, setTrackIndex] = React.useState(0);
+  const [currentTrack, setCurrentTrack] = React.useState({});
+  React.useEffect(() => {
+    const setTrack = () => {
+      if (!isLoadingPlaylist) {
+        setCurrentTrack(playlist.tracks[trackIndex])
+        //console.log(trackIndex)
+        //console.log(playlist.tracks[trackIndex])
+      }
+    };
+    setTrack()
+  }, [trackIndex]);
+
+  const [isLoadingTrackIndex, setIsLoadingTrackIndex] = React.useState(true)
+
+  const handleClickUpdateTrackIndex = (e, index) => {
+    setIsLoadingTrackIndex(false)
+    console.log('handleClickUpdateTrackIndex')
+    setTrackIndex(index);
+    console.log('TrackIndex: ' + index)
+
+  }
+
+  const [isLoadingPlayer, setIsLoadingPlayer] = React.useState(true)
+  React.useEffect(() => {
+    if (currentTrack) {
+      setIsLoadingPlayer(false)
+    }
+  }, [currentTrack])
+
+  return (
+    <div className="layout">
+
+      {isLoadingAlbums ?
+        ''
+        : <AudioCard
+          albums={albums}
+          setPlaylist={setPlaylist}
+          updatePlaylist={handleClickUpdatePlaylist}
+          playlist={playlist}
+        />}
+      {isLoadingPlaylist ?
+        ''
+        : <AudioList
+          //tracks={tracks}
+          playlist={playlist}
+          setTrackIndex={setTrackIndex}
+          handleClickUpdateTrackIndex={handleClickUpdateTrackIndex}
+        />}
+      <br />
+      {isLoadingTrackIndex ?
+        ''
+        : <AudioPlayer
+          playlist={playlist}
+          trackIndex={trackIndex}
+          setTrackIndex={setTrackIndex}
+          setCurrentTrack={setCurrentTrack}
+          currentTrack={currentTrack} />} 
+    </div >
+  )
 }
 
-export default ContentMain;
+export default Descubre;
