@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import AudioControls from "./AudioControls";
+import '../music/css/AudioPlayer.css'
 
 
 const AudioPlayer = ({ playlist, trackIndex, setTrackIndex, setCurrentTrack, currentTrack }) => {
@@ -125,15 +126,11 @@ const AudioPlayer = ({ playlist, trackIndex, setTrackIndex, setCurrentTrack, cur
 
     return (
 
+     <section className="section" >
         <div className="track-info">
-            <img
-                className="artwork"
-                src={image}
-                alt={`track artwork for ${name} by ${artist}`}
-            />
             <h2 className="name">{name}</h2>
-            <h3 className="artist">{artist}</h3>
-            <AudioControls
+         <section className="input">
+         <AudioControls
                 isPlaying={isPlaying}
                 onPrevClick={toPrevTrack}
                 onNextClick={toNextTrack}
@@ -158,7 +155,9 @@ const AudioPlayer = ({ playlist, trackIndex, setTrackIndex, setCurrentTrack, cur
                 id="volBar"
                 onChange={(e) => handleVolume(e.target.value / 100)}
             />
+         </section>
         </div>
+     </section>
     );
 };
 
