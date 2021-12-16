@@ -1,9 +1,11 @@
-.section{
-    background-color: rgb(32, 32, 32);
-    color: white;
-    display: grid;
+.section {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  display: grid;
 }
-
-.input{
-    display: flex;
+.track-info {
+  background-color: blueviolet;
+}
+.input {
+  display: flex;
 }
