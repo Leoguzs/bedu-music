@@ -99,19 +99,7 @@ const Auth = () => {
                   required
                 />
               </div>
-            )}
-            {isSignup && ( //se utiliza para mostrar algo basado en la misma condición
-              <div className="auth__form-container_fields-content_input">
-                <label htmlFor="avatarURL">Foto de Perfil</label>
-                <input
-                  name="avatarURL"
-                  type="text"
-                  placeholder="Foto de Perfil"
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            )}
+            )}        
             <div className="auth__form-container_fields-content_input">
               <label htmlFor="password">Contraseña</label>
               <input

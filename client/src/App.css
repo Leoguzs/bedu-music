@@ -27,13 +27,13 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  background: #242424;
+  background: #fffefe;
 }
 
 .auth__form-container_image {
   flex: 3;
   display: flex;
-  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 0px 5px rgba(58, 58, 58, 0.05);
 }
 
 .auth__form-container_image img {
@@ -60,7 +60,7 @@ body {
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #bdbdbd;
+  color: #303030;
   font-weight: 900;
 }
 
@@ -74,7 +74,7 @@ body {
 
 .auth__form-container_fields-content_input label {
   margin-bottom: 0.45rem;
-  color: #f3f3f3;
+  color: #5e5e5e;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
@@ -598,7 +598,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #fff;
+  color: rgb(58, 58, 58);
   margin-left: 20px;
 }
 
@@ -662,7 +662,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #4e4e4e;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -684,7 +684,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 17px;
-  color: #fff;
+  color: rgb(59, 58, 58);
   margin-top: 16px;
   font-weight: 700;
 }
@@ -729,7 +729,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  color: #696969;
   word-break: break-all;
   font-weight: 600;
 }
@@ -777,7 +777,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #fff;
+  color: rgb(77, 77, 77);
   margin-left: 20px;
 }
 
@@ -797,7 +797,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 120%;
-  color: #fff;
+  color: rgb(51, 51, 51);
   margin-top: 30px;
   font-weight: 700;
 }
@@ -827,7 +827,7 @@ body {
 
 .edit-channel__button-wrapper {
   height: 82px;
-  background: #f7f6f8;
+  background: #4a4a4b;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -840,7 +840,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #666464;
   margin-right: 30px;
   border-radius: 8px;
   cursor: pointer;
@@ -872,7 +872,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #242424;
+  color: #424141;
   margin-right: 8px;
 }
 
